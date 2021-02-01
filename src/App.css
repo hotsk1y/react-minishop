@@ -1,0 +1,258 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;  
+  background-color: rgb(207, 207, 207);
+  margin-bottom: 20px;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img{
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.header__logo-text{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.header__basket{
+  display: flex;
+  cursor: pointer;
+}
+.header__basket-logo{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  
+}
+.orders__count{
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  right: 290px;
+  font-size: 12px;
+}
+
+/* Секция с товарами */
+.content__item{
+  display: flex;
+  background-color: rgb(231, 231, 231);
+  padding: 15px 20px;
+  margin-bottom: 15px;
+}
+
+.content__item-img{
+  max-width: 200px;
+  max-height: 200px;
+  border: solid 5px #000;
+  margin-right: 25px;
+  background-color: #fff;
+}
+.content__item-img img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content__item-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content__item-title{
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.content__item-descr{
+  font-weight: 400;
+}
+
+.content__item-price{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content__item-btn{
+  padding: 10px;
+  border-radius: 20px;
+  align-self: flex-end;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background-color: rgb(68, 68, 68);
+  color: #fff;
+  outline: none;
+}
+.content__item-btn.used{
+  background-color: #ccc;
+}
+
+/* Корзина */
+.total{
+  padding: 15px 35px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.total__title{
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+.total__title-basket img{
+  width: 40px;
+}
+
+.total__title-basket{
+  display: flex;
+  align-items: center;
+}
+
+.total__title-text{
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.total__title-text-end{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+  justify-content: flex-end;
+  display: flex;
+  color:rgb(17, 14, 196);
+}
+
+.clear img{
+  width: 20px;
+  margin-right: 5px;
+}
+.clear{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  opacity: .5;
+  transition: opacity .3s;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.clear:hover{
+  opacity: 1;
+}
+
+.total__item{
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+}
+
+.total__item-img{
+  width: 100px;
+}
+
+.total__item-descr-wrapper{
+  display: flex;
+  align-items: center;
+  width: 400px;
+}
+
+.total__item-descr{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total__item-text{
+  margin-left: 25px;
+}
+
+.total__item-text-title{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.total__item-text-descr{
+  font-size: 16px;
+  max-width: 520px;
+}
+
+.item-amount{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.circle{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 3px solid gray;
+  text-align: center;
+  vertical-align: center;
+  font-weight: 700;
+  color: gray;
+  outline: none;
+  cursor: pointer;
+  background: none;
+}
+
+.item-amount .number{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.total__item-descr .item-price{
+  font-weight: 700;
+  font-size: 18px;
+  width: 120px;
+}
+
+.delete-item__btn{
+  border-color: black;
+  color: black;
+}
+
+.total-cost{
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  align-self: flex-end;
+  color: rgb(17, 14, 196);
+}
